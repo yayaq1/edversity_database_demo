@@ -1,17 +1,25 @@
-import SubmissionForm from '@/app/components/SubmissionForm'
-import SubmissionsList from '@/app/components/SubmissionsList'
+import Navbar from '@/app/components/Navbar';
+import Hero from '@/app/components/Hero';
+import About from '@/app/components/About';
+import Experience from '@/app/components/Experience';
+import Education from '@/app/components/Education';
+import Skills from '@/app/components/Skills';
+import Contact from '@/app/components/Contact';
+import Footer from '@/app/components/Footer';
 
 export default function Home() {
   return (
-    <main className="main-container">
-      <header className="page-header">
-        <h1>Startup Ideas Forum</h1>
-        <p>Share your business ideas and browse submissions from others</p>
-      </header>
-
-      <SubmissionForm />
-      
-      <SubmissionsList />
-    </main>
-  )
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
 }

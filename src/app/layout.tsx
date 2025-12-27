@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Startup Ideas Forum",
-  description: "A public forum for sharing startup and business ideas",
+  title: "Muhammad Jawad | ACA, ACCA | Finance & Taxation Professional",
+  description: "Chartered Accountant with extensive experience at PwC, Deloitte, and Pakistan State Oil. Specializing in taxation, IFRS, and financial advisory.",
+  keywords: ["Chartered Accountant", "ACA", "ACCA", "Finance", "Taxation", "IFRS", "PwC", "Deloitte", "Pakistan State Oil"],
+  authors: [{ name: "Muhammad Jawad" }],
+  openGraph: {
+    title: "Muhammad Jawad | Finance & Taxation Professional",
+    description: "Chartered Accountant with extensive experience at PwC, Deloitte, and Pakistan State Oil.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {children}
       </body>
     </html>
